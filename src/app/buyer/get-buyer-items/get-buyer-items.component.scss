@@ -1,0 +1,25 @@
+#card-info {
+    font-size: 11px;
+}
+.card-img {
+    height: 286px;
+}
+#card-display {
+    max-width: 60rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+.card { 
+    flex: 0 0 18rem;
+    margin: 10px auto;
+    align-self: center;
+}
+
+.h{
+    &:hover{
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    }
+ 
+}
