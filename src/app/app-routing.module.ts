@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
-const routes: Routes = [{ path: 'buyer', loadChildren: './buyer/buyer.module#BuyerModule' }];
+const routes: Routes = [
+  { path: 'buyer', loadChildren: './buyer/buyer.module#BuyerModule' },
+  { path: 'auth', loadChildren: './authentication/authentication.module#AuthenticationModule'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
