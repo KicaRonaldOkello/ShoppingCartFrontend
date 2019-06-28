@@ -14,14 +14,15 @@ export class GetBuyerItemsComponent implements OnInit {
   ngOnInit() {
     this.getItems();
   }
-
+  
   public getSantizeUrl(url: string) {
     if (!url) { return null; }
     return this.sanitizer.bypassSecurityTrustUrl(url);
-}
-
-getItems() {
-  this.itemService.get().subscribe(item => {
+  }
+  
+  getItems() {
+    this.itemService.get().subscribe(item => {
+      console.log(item , '>>>>');
     this.allItems = item.result;
     });
   }

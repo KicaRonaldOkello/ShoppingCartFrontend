@@ -1,0 +1,38 @@
+.load-progress {
+    margin-bottom: 5px;
+    width: 50%;
+    display: flex;
+    .progress{
+        width: 60%;
+    }
+}
+img {
+    width: 40%;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.control-icons {
+    display: flex;
+    flex-direction: row;
+}
+.light {
+    -webkit-text-stroke: 3px white;
+}
+.image-thumbnail {
+    margin-bottom: 10px;
+}
+
+.file-upload {
+    width: 100%;
+    display: block;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        // height: calc(1.5em + .75rem + 2px);
+        margin-bottom: 0;
+}

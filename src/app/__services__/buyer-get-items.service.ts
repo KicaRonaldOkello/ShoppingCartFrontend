@@ -13,7 +13,7 @@ export class BuyerGetItemsService {
 
   get(): Observable<ItemsModel> {
     return this.http.get(
-      'https://front-shopping-cart.herokuapp.com/api/v1/buyer/items'
+      'https://shopping-cart-staging.herokuapp.com/api/v1/buyer/items'
       ).pipe(map(data => new ItemsModel().deserialize(data)));
   }
 }

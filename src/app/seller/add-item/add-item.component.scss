@@ -1,0 +1,21 @@
+.item-form {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 70%;
+    margin-top: 100px;
+}
+
+.custom-file{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.image-thumbnail {
+
+    background-color: yelow;
+}

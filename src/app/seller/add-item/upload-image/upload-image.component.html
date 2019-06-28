@@ -1,0 +1,16 @@
+<div class="file-upload">
+  <span>
+    <input #file type="file" (change)="preview(file.files)" accept="image/*" class="custom-file-input" required>
+  </span>
+  <label  class="custom-file-label" for="validatedCustomFile">Choose image...</label>
+  <br><br>
+  <span *ngFor="let image of images">
+    <img [src]="image.url" height="200">
+    <div class="load-progress">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" [style.width]="(image.uploadProgress | async) + '%'" [attr.aria-valuenow]="(uploadProgress | async)" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+  </span>
+  <button *ngIf="images.length > 0" type="button" (click)="uploadAllImages()" class="btn btn-primary">Upload</button>
+</div>

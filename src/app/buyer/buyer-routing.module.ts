@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { GetBuyerItemsComponent } from './get-buyer-items/get-buyer-items.component';
 
 const routes: Routes = [
-  { path: 'items', component: GetBuyerItemsComponent }
+  { path: '', component: GetBuyerItemsComponent }
 ];
 
 @NgModule({

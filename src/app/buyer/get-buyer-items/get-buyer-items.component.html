@@ -1,6 +1,6 @@
 <div id="card-display">
   <div class="card h" style="width: 18rem;" *ngFor= "let item of allItems">
-    <img class="card-img" [src]="getSantizeUrl(item.url)" alt="Card image cap">
+    <img class="card-img" [src]="getSantizeUrl(item.image)" alt="Card image cap">
     <div class="card-body text-center">
       <h5 class="card-title">{{item.name}}</h5>
       <p class="card-text" id="card-info">{{item.sub_title}}</p>
